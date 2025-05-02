@@ -1,0 +1,59 @@
+.navbar-brand span {
+    color: #F7941D; 
+    font-weight: bold;
+  }
+
+  .daimo-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card img{
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .mybtn{
+    color: black;
+    background-color: orange;
+    font-weight: bolder;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin: 30px auto;
+    display: block;
+  }
+
+
+
+  .box {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px gray;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1ebe5d;
+  }

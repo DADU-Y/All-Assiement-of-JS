@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+</head>
+<body onload="nextQuestion()">
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <h2 id="timer">2:00</h2>
+    <p id="ques">What is the capital of France?</p>
+    <div class="option-group">
+      <label class="option">
+        <input type="radio" name="options" value="1" onclick="clicked()">
+        <span id="opt1">Paris</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="options" value="2" onclick="clicked()">
+        <span id="opt2">Berlin</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="options" value="3" onclick="clicked()">
+        <span id="opt3">Madrid</span>
+      </label>
+    </div>
+    <button id="btn" disabled onclick="nextQuestion()">Next</button>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
